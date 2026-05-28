@@ -7,7 +7,8 @@ DevInterviewCoach is a modern interview preparation product for full-stack devel
 - Next.js App Router project structure
 - TypeScript-first components and content data
 - Tailwind CSS 4 styling
-- Responsive landing page with clean navigation
+- Premium SaaS-inspired responsive landing page
+- Polished sticky navigation, gradient hero, and elevated content cards
 - Topic cards for six full-stack technologies
 - Interactive question bank with 18 interview questions
 - Client-side search and topic/difficulty filters using React state

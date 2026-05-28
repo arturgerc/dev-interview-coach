@@ -15,12 +15,12 @@ export function ButtonLink({
 }: ButtonLinkProps) {
   const styles =
     variant === "primary"
-      ? "bg-slate-950 text-white shadow-lg shadow-slate-950/15 hover:bg-slate-800"
-      : "border border-slate-300 bg-white/75 text-slate-900 hover:border-slate-500 hover:bg-white";
+      ? "bg-gradient-to-r from-slate-950 to-slate-800 text-white shadow-xl shadow-slate-950/20 hover:from-slate-900 hover:to-teal-900"
+      : "border border-slate-300/80 bg-white/90 text-slate-900 shadow-sm hover:border-slate-400 hover:bg-white hover:shadow-md";
 
   return (
     <Link
-      className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-5 text-sm font-semibold transition hover:-translate-y-0.5 ${styles}`}
+      className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-md px-5 text-sm font-semibold transition duration-200 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500 ${styles}`}
       href={href}
     >
       {children}
