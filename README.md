@@ -12,6 +12,8 @@ DevInterviewCoach is a modern interview preparation product for full-stack devel
 - Topic cards for six full-stack technologies
 - Interactive question bank with 18 interview questions
 - Client-side search and topic/difficulty filters using React state
+- `/practice` Practice Arena page with one-question-at-a-time mock interview flow
+- Local streak counter, progress indicator, badges, and confidence score UI
 - Junior, Middle, and Senior difficulty levels
 - Short answers, senior-style answers, and common mistakes for each question
 - "Tell me about yourself" answer for a senior full-stack developer with 15 years of experience
@@ -55,6 +57,8 @@ npm run lint
 
 ```text
 app/
+  practice/
+    page.tsx
   globals.css
   layout.tsx
   page.tsx
@@ -62,7 +66,12 @@ components/
   ButtonLink.tsx
   Footer.tsx
   HeroVisual.tsx
+  InterviewerPanel.tsx
   Navigation.tsx
+  PracticeArena.tsx
+  PracticeCard.tsx
+  PracticeControls.tsx
+  ProgressBar.tsx
   QuestionBank.tsx
   QuestionCard.tsx
   SectionHeader.tsx
