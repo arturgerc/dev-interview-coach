@@ -25,7 +25,7 @@ export function Navigation() {
           ))}
         </nav>
         <a
-          className="inline-flex min-h-10 items-center rounded-md bg-slate-950 px-4 text-sm font-semibold text-white transition hover:bg-slate-800"
+          className="inline-flex min-h-10 items-center rounded-md bg-slate-950 px-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
           href="#questions"
         >
           Start practice

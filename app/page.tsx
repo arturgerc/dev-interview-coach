@@ -3,10 +3,11 @@ import { ButtonLink } from "@/components/ButtonLink";
 import { Footer } from "@/components/Footer";
 import { HeroVisual } from "@/components/HeroVisual";
 import { Navigation } from "@/components/Navigation";
-import { QuestionCard } from "@/components/QuestionCard";
+import { QuestionBank } from "@/components/QuestionBank";
 import { SectionHeader } from "@/components/SectionHeader";
+import { SeniorProfile } from "@/components/SeniorProfile";
 import { TopicCard } from "@/components/TopicCard";
-import { sampleQuestions, seniorIntroAnswer, topics } from "@/lib/content";
+import { seniorIntroAnswer, seniorIntroStrengths, topics } from "@/lib/content";
 
 const strengths = [
   "Practice questions organized by real full-stack skills",
@@ -34,7 +35,7 @@ export default function Home() {
               Build answers that sound experienced, specific, and human.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="#questions">Practice sample questions</ButtonLink>
+              <ButtonLink href="#questions">Open question bank</ButtonLink>
               <ButtonLink href="#topics" variant="secondary">
                 Explore topics
               </ButtonLink>
@@ -63,8 +64,8 @@ export default function Home() {
             <p className="mt-1 text-sm text-slate-300">Core technologies</p>
           </div>
           <div>
-            <p className="text-3xl font-bold">15 yrs</p>
-            <p className="mt-1 text-sm text-slate-300">Senior answer example</p>
+            <p className="text-3xl font-bold">18</p>
+            <p className="mt-1 text-sm text-slate-300">Searchable questions</p>
           </div>
           <div>
             <p className="text-3xl font-bold">Real voice</p>
@@ -91,36 +92,19 @@ export default function Home() {
       <section className="bg-white/65 px-6 py-20 lg:px-8" id="questions">
         <div className="mx-auto max-w-7xl">
           <SectionHeader
-            eyebrow="Practice answers"
-            title="Sample interview questions"
-            description="Use these examples as starting points, then adapt them to your own projects, constraints, and decisions."
+            eyebrow="Question bank"
+            title="Search and filter real interview prompts"
+            description="Practice with junior, middle, and senior questions across the core full-stack tools. Each card includes a concise answer, a stronger senior-style answer, and a common trap to avoid."
           />
-          <div className="mt-12 grid gap-5 lg:grid-cols-2">
-            {sampleQuestions.map((question) => (
-              <QuestionCard key={question.question} question={question} />
-            ))}
-          </div>
+          <QuestionBank />
         </div>
       </section>
 
       <section className="px-6 py-20 lg:px-8" id="about-answer">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-          <div>
-            <p className="text-sm font-bold uppercase tracking-wide text-teal-700">
-              Senior introduction
-            </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Tell me about yourself
-            </h2>
-            <p className="mt-4 text-lg leading-8 text-slate-600">
-              A concise answer for a senior full-stack developer with 15 years
-              of experience.
-            </p>
-          </div>
-          <article className="rounded-lg border border-slate-200 bg-white p-7 shadow-sm">
-            <p className="text-lg leading-8 text-slate-700">{seniorIntroAnswer}</p>
-          </article>
-        </div>
+        <SeniorProfile
+          answer={seniorIntroAnswer}
+          strengths={seniorIntroStrengths}
+        />
       </section>
 
       <section className="px-6 pb-20 lg:px-8">
@@ -133,7 +117,7 @@ export default function Home() {
             </p>
           </div>
           <ButtonLink href="#questions" variant="secondary">
-            Go to questions
+            Open question bank
           </ButtonLink>
         </div>
       </section>

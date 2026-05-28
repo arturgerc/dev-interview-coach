@@ -8,7 +8,7 @@ export function TopicCard({ topic }: TopicCardProps) {
   const { Icon } = topic;
 
   return (
-    <article className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg hover:shadow-slate-950/10">
+    <article className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-slate-300 hover:shadow-xl hover:shadow-slate-950/10">
       <div
         className={`mb-5 flex h-12 w-12 items-center justify-center rounded-md ${topic.accent} text-white`}
       >

@@ -1,7 +1,7 @@
 const footerLinks = [
   { label: "Topics", href: "#topics" },
   { label: "Questions", href: "#questions" },
-  { label: "About Answer", href: "#about-answer" },
+  { label: "About", href: "#about-answer" },
 ];
 
 export function Footer() {

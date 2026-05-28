@@ -1,6 +1,6 @@
 # DevInterviewCoach
 
-DevInterviewCoach is a modern interview preparation landing page for full-stack developers. It focuses on Python, JavaScript, TypeScript, Node.js, React, and Next.js with practical topic cards, sample interview questions, and human-style answers.
+DevInterviewCoach is a modern interview preparation product for full-stack developers. It focuses on Python, JavaScript, TypeScript, Node.js, React, and Next.js with topic guidance, a searchable question bank, senior-style answers, and a polished "Tell me about yourself" example.
 
 ## Features
 
@@ -9,9 +9,12 @@ DevInterviewCoach is a modern interview preparation landing page for full-stack 
 - Tailwind CSS 4 styling
 - Responsive landing page with clean navigation
 - Topic cards for six full-stack technologies
-- Sample interview questions with natural answers
+- Interactive question bank with 18 interview questions
+- Client-side search and topic/difficulty filters using React state
+- Junior, Middle, and Senior difficulty levels
+- Short answers, senior-style answers, and common mistakes for each question
 - "Tell me about yourself" answer for a senior full-stack developer with 15 years of experience
-- Reusable components for navigation, buttons, cards, section headers, and footer
+- Reusable components for navigation, buttons, cards, section headers, filters, and profile content
 - Generated hero visual stored in `public/images/interview-coach-dashboard.png`
 
 ## Tech Stack
@@ -59,15 +62,26 @@ components/
   Footer.tsx
   HeroVisual.tsx
   Navigation.tsx
+  QuestionBank.tsx
   QuestionCard.tsx
   SectionHeader.tsx
+  SeniorProfile.tsx
   TopicCard.tsx
 lib/
   content.ts
+  questions.ts
 public/
   images/
     interview-coach-dashboard.png
 ```
+
+## Future Improvements
+
+- Add a practice mode that reveals answers step by step.
+- Add bookmarking for questions the user wants to revisit.
+- Add mock interview flows grouped by role and seniority.
+- Add progress tracking in local storage.
+- Add more system design and behavioral interview prompts.
 
 ## Deployment
 

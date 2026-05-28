@@ -16,12 +16,6 @@ export type Topic = {
   Icon: LucideIcon;
 };
 
-export type Question = {
-  question: string;
-  answer: string;
-  tag: string;
-};
-
 export const topics: Topic[] = [
   {
     title: "Python",
@@ -67,32 +61,12 @@ export const topics: Topic[] = [
   },
 ];
 
-export const sampleQuestions: Question[] = [
-  {
-    tag: "Python",
-    question: "How would you keep a Python API fast as the amount of data grows?",
-    answer:
-      "I start by measuring instead of guessing. I would look at database query plans, add pagination where the response can grow, avoid repeated work inside request handlers, and cache only the data that is stable enough to be cached safely. If the slow part is IO, I may move it to async code or a background job. If it is CPU-heavy, I would isolate it and consider a worker process so the API stays responsive.",
-  },
-  {
-    tag: "TypeScript",
-    question: "When do you use TypeScript types, and when do you use runtime validation?",
-    answer:
-      "TypeScript is great for code I own because it catches mistakes before the app runs. Runtime validation is still needed at boundaries, like HTTP requests, environment variables, webhooks, or data from a queue. My usual rule is: types protect the inside of the system, validation protects the edges.",
-  },
-  {
-    tag: "Node.js",
-    question: "How do you handle async errors in a Node.js service?",
-    answer:
-      "I keep errors visible and intentional. Route handlers should pass failures to one central error layer, background jobs should retry only when the operation is safe to retry, and logs should include enough context to debug the issue later. I also separate expected errors, like a missing record, from unexpected errors, like a database timeout.",
-  },
-  {
-    tag: "React and Next.js",
-    question: "How do Server Components change the way you fetch data?",
-    answer:
-      "They let me fetch data closer to where it is used without shipping that data-fetching code to the browser. I still think carefully about caching, loading states, and what must be interactive. A good pattern is to keep the first render server-friendly, then use client components only for the parts that truly need browser state or event handlers.",
-  },
-];
-
 export const seniorIntroAnswer =
-  "I am a senior full-stack developer with 15 years of experience building web products from early prototypes through production systems. Most of my work has been across Python services, JavaScript and TypeScript applications, Node.js APIs, and React or Next.js frontends. I like being close to both product thinking and engineering details: understanding the user problem, shaping the architecture, then helping the team ship something maintainable. In recent roles I have led technical decisions, mentored developers, improved testing and delivery practices, and worked with stakeholders to turn unclear requirements into practical releases. What I usually bring to a team is calm execution, strong debugging instincts, and the ability to connect backend, frontend, infrastructure, and product context.";
+  "I am a senior full-stack developer with 15 years of experience building web products from early prototypes through production systems. I have spent a lot of time in Python services, JavaScript and TypeScript codebases, Node.js APIs, and React or Next.js frontends, so I am comfortable moving between architecture, implementation, and product tradeoffs. What I enjoy most is taking an unclear problem, making it concrete with the team, and then shipping something reliable that users can actually feel. Over the years I have led technical decisions, mentored developers, improved testing and delivery habits, and worked closely with product and design partners. I usually bring calm execution, strong debugging instincts, and a practical view of how backend, frontend, infrastructure, and user experience fit together.";
+
+export const seniorIntroStrengths = [
+  "Starts with experience and product scope instead of a job-title recap.",
+  "Mentions Python, JavaScript, TypeScript, Node.js, React, and Next.js naturally.",
+  "Shows leadership through mentoring, technical decisions, and delivery habits.",
+  "Connects engineering choices to user value and team collaboration.",
+];
