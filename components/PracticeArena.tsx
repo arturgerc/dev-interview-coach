@@ -190,6 +190,44 @@ export function PracticeArena() {
               current={progressCurrent}
               total={filteredQuestions.length}
             />
+            <div className="mt-5 grid gap-3 sm:grid-cols-[0.8fr_1.2fr]">
+              <div className="rounded-md border border-white/10 bg-slate-950/35 p-4">
+                <p className="text-xs font-black uppercase tracking-wide text-teal-200">
+                  Session rhythm
+                </p>
+                <div className="mt-4 flex gap-2">
+                  {[0, 1, 2].map((item) => (
+                    <span
+                      className={`h-16 flex-1 rounded-md border border-white/10 ${
+                        item <= currentIndex % 3
+                          ? "bg-gradient-to-br from-teal-300/40 to-sky-300/30"
+                          : "bg-white/5"
+                      }`}
+                      key={item}
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="relative overflow-hidden rounded-md border border-white/10 bg-slate-950/35 p-4">
+                <div className="absolute -right-6 -top-8 h-24 w-24 rounded-full bg-sky-400/15 blur-2xl" />
+                <p className="text-xs font-black uppercase tracking-wide text-sky-200">
+                  Question stack
+                </p>
+                <div className="mt-4 space-y-2">
+                  {["Short answer", "Senior framing", "Common mistake"].map(
+                    (label, index) => (
+                      <div
+                        className="flex items-center justify-between rounded-md border border-white/10 bg-white/10 px-3 py-2 text-sm font-bold text-slate-200"
+                        key={label}
+                      >
+                        <span>{label}</span>
+                        <span className="text-teal-200">0{index + 1}</span>
+                      </div>
+                    ),
+                  )}
+                </div>
+              </div>
+            </div>
             <div className="mt-5 grid gap-3 sm:grid-cols-3">
               {confidenceLevels.map((level) => (
                 <button

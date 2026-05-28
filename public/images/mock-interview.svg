@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Mock interview illustration</title>
+  <desc id="desc">A video interview screen with a candidate and interviewer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="70" y1="50" x2="720" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF2FF"/>
+      <stop offset="0.58" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CCFBF1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="145%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#0F172A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" rx="40" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <rect x="92" y="94" width="616" height="386" rx="30" fill="#0F172A"/>
+    <rect x="126" y="138" width="408" height="286" rx="22" fill="#12384A"/>
+    <rect x="556" y="138" width="118" height="132" rx="18" fill="#F8FAFC"/>
+    <rect x="556" y="292" width="118" height="132" rx="18" fill="#F8FAFC"/>
+  </g>
+  <circle cx="330" cy="230" r="52" fill="#38BDF8"/>
+  <path d="M238 382C250 324 286 294 330 294C374 294 410 324 422 382" fill="#0B2536"/>
+  <circle cx="330" cy="226" r="34" fill="#E0F2FE"/>
+  <circle cx="616" cy="184" r="24" fill="#A78BFA"/>
+  <path d="M578 244C584 214 599 202 616 202C633 202 648 214 654 244" fill="#0F172A"/>
+  <circle cx="616" cy="338" r="24" fill="#14B8A6"/>
+  <path d="M578 398C584 368 599 356 616 356C633 356 648 368 654 398" fill="#0F172A"/>
+  <rect x="254" y="448" width="292" height="44" rx="22" fill="#FFFFFF"/>
+  <circle cx="306" cy="470" r="13" fill="#14B8A6"/>
+  <circle cx="400" cy="470" r="13" fill="#38BDF8"/>
+  <circle cx="494" cy="470" r="13" fill="#F87171"/>
+  <rect x="164" y="158" width="112" height="10" rx="5" fill="#2DD4BF"/>
+  <rect x="164" y="184" width="176" height="8" rx="4" fill="#CBD5E1" opacity="0.72"/>
+</svg>

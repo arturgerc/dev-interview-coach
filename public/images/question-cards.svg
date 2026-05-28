@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Question cards illustration</title>
+  <desc id="desc">Stacked interview question cards with topic and difficulty badges.</desc>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="70" x2="710" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#E0F2FE"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="145%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#0F172A" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" rx="40" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <rect x="166" y="126" width="390" height="250" rx="26" fill="#FFFFFF" transform="rotate(-7 361 251)"/>
+    <rect x="230" y="180" width="390" height="250" rx="26" fill="#FFFFFF" transform="rotate(5 425 305)"/>
+    <rect x="206" y="234" width="390" height="250" rx="26" fill="#FFFFFF"/>
+  </g>
+  <rect x="238" y="266" width="90" height="30" rx="15" fill="#0F172A"/>
+  <rect x="342" y="266" width="84" height="30" rx="15" fill="#CCFBF1"/>
+  <rect x="238" y="324" width="260" height="16" rx="8" fill="#0F172A"/>
+  <rect x="238" y="362" width="294" height="10" rx="5" fill="#64748B"/>
+  <rect x="238" y="392" width="220" height="10" rx="5" fill="#94A3B8"/>
+  <rect x="238" y="428" width="124" height="12" rx="6" fill="#14B8A6"/>
+  <circle cx="590" cy="164" r="46" fill="#A78BFA" opacity="0.85"/>
+  <path d="M574 164L586 176L608 148" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

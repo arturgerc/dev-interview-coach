@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Developer profile illustration</title>
+  <desc id="desc">A developer avatar with skill badges and profile cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="50" x2="740" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#ECFDF5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="145%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#0F172A" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" rx="40" fill="url(#bg)"/>
+  <circle cx="650" cy="112" r="82" fill="#38BDF8" opacity="0.15"/>
+  <g filter="url(#shadow)">
+    <rect x="112" y="104" width="576" height="392" rx="28" fill="#FFFFFF"/>
+  </g>
+  <rect x="112" y="104" width="576" height="112" rx="28" fill="#0F172A"/>
+  <circle cx="220" cy="216" r="68" fill="#14B8A6"/>
+  <circle cx="220" cy="194" r="34" fill="#CCFBF1"/>
+  <path d="M154 292C164 250 190 230 220 230C250 230 276 250 286 292" fill="#0F172A"/>
+  <rect x="326" y="252" width="150" height="14" rx="7" fill="#0F172A"/>
+  <rect x="326" y="290" width="260" height="10" rx="5" fill="#64748B"/>
+  <rect x="326" y="322" width="220" height="10" rx="5" fill="#94A3B8"/>
+  <rect x="326" y="366" width="86" height="34" rx="17" fill="#E0F2FE"/>
+  <rect x="430" y="366" width="108" height="34" rx="17" fill="#CCFBF1"/>
+  <rect x="556" y="366" width="82" height="34" rx="17" fill="#EDE9FE"/>
+  <rect x="346" y="377" width="46" height="10" rx="5" fill="#0284C7"/>
+  <rect x="450" y="377" width="68" height="10" rx="5" fill="#0F766E"/>
+  <rect x="576" y="377" width="42" height="10" rx="5" fill="#7C3AED"/>
+  <rect x="160" y="420" width="478" height="16" rx="8" fill="#E2E8F0"/>
+  <rect x="160" y="420" width="366" height="16" rx="8" fill="#14B8A6"/>
+</svg>

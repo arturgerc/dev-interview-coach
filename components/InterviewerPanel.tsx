@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Bot, Sparkles } from "lucide-react";
 
 type InterviewerPanelProps = {
@@ -32,6 +33,16 @@ export function InterviewerPanel({
         I will ask one focused question at a time. Reveal the answer when you
         have spoken your own version out loud.
       </p>
+
+      <div className="mt-6 overflow-hidden rounded-md border border-white/10 bg-white">
+        <Image
+          alt="Mock interview video call illustration"
+          className="aspect-[4/3] w-full object-cover"
+          height={600}
+          src="/images/mock-interview.svg"
+          width={800}
+        />
+      </div>
 
       <div className="mt-6 grid grid-cols-2 gap-3">
         <div className="rounded-md border border-white/10 bg-slate-950/35 p-4">

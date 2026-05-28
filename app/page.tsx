@@ -2,11 +2,13 @@ import { CheckCircle2 } from "lucide-react";
 import { ButtonLink } from "@/components/ButtonLink";
 import { Footer } from "@/components/Footer";
 import { HeroVisual } from "@/components/HeroVisual";
+import { LifestyleCard } from "@/components/LifestyleCard";
 import { Navigation } from "@/components/Navigation";
 import { QuestionBank } from "@/components/QuestionBank";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SeniorProfile } from "@/components/SeniorProfile";
 import { TopicCard } from "@/components/TopicCard";
+import { VisualFeatureSection } from "@/components/VisualFeatureSection";
 import { seniorIntroAnswer, seniorIntroStrengths, topics } from "@/lib/content";
 
 const strengths = [
@@ -19,6 +21,30 @@ const heroBadges = [
   "Senior-ready",
   "Real interview answers",
   "Full-stack focused",
+];
+
+const clarityCards = [
+  {
+    badge: "Before interview",
+    title: "Nervous, scattered answers",
+    text: "See the messy stage clearly: too many details, not enough structure, and no confident close.",
+    image: "/images/remote-workspace.svg",
+    alt: "Remote workspace before an interview",
+  },
+  {
+    badge: "Practice mode",
+    title: "Prompt, answer, compare",
+    text: "Use the question bank and Practice Arena to speak first, reveal the answer, and improve your framing.",
+    image: "/images/question-cards.svg",
+    alt: "Stacked interview question cards",
+  },
+  {
+    badge: "Interview ready",
+    title: "Senior-level clarity",
+    text: "Walk into the conversation with cleaner tradeoffs, examples, and a calmer technical voice.",
+    image: "/images/developer-profile.svg",
+    alt: "Developer profile with senior-ready skills",
+  },
 ];
 
 export default function Home() {
@@ -90,6 +116,30 @@ export default function Home() {
             <p className="mt-1 text-sm font-medium text-slate-300">
               Clear, natural responses
             </p>
+          </div>
+        </div>
+      </section>
+
+      <VisualFeatureSection />
+
+      <section className="px-6 py-24 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeader
+            eyebrow="Answer transformation"
+            title="From nervous answers to senior-level clarity"
+            description="The product experience is designed around a simple loop: rehearse, compare, refine, and bring stronger examples into the room."
+          />
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {clarityCards.map((card) => (
+              <LifestyleCard
+                alt={card.alt}
+                badge={card.badge}
+                image={card.image}
+                key={card.title}
+                text={card.text}
+                title={card.title}
+              />
+            ))}
           </div>
         </div>
       </section>

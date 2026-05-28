@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Remote workspace illustration</title>
+  <desc id="desc">A remote developer workspace with laptop, plant, and notes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="50" x2="720" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.55" stop-color="#F1F5F9"/>
+      <stop offset="1" stop-color="#DBEAFE"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="145%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#0F172A" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" rx="40" fill="url(#bg)"/>
+  <path d="M100 456H700" stroke="#CBD5E1" stroke-width="3"/>
+  <g filter="url(#shadow)">
+    <rect x="196" y="158" width="360" height="236" rx="24" fill="#0F172A"/>
+    <rect x="224" y="190" width="304" height="168" rx="14" fill="#12384A"/>
+    <rect x="268" y="394" width="216" height="22" rx="11" fill="#CBD5E1"/>
+    <rect x="236" y="416" width="280" height="24" rx="12" fill="#94A3B8"/>
+  </g>
+  <rect x="252" y="222" width="90" height="10" rx="5" fill="#38BDF8"/>
+  <rect x="252" y="252" width="190" height="8" rx="4" fill="#2DD4BF"/>
+  <rect x="252" y="282" width="150" height="8" rx="4" fill="#EDE9FE"/>
+  <rect x="252" y="312" width="220" height="8" rx="4" fill="#94A3B8"/>
+  <g filter="url(#shadow)">
+    <rect x="574" y="252" width="104" height="156" rx="20" fill="#FFFFFF"/>
+    <path d="M626 260C626 220 658 204 688 218C674 248 654 264 626 260Z" fill="#22C55E"/>
+    <path d="M624 268C596 232 568 232 544 252C568 276 596 284 624 268Z" fill="#14B8A6"/>
+    <rect x="598" y="336" width="56" height="72" rx="12" fill="#0F172A"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="102" y="262" width="120" height="112" rx="18" fill="#FFFFFF"/>
+    <rect x="124" y="288" width="62" height="10" rx="5" fill="#0F172A"/>
+    <rect x="124" y="322" width="74" height="8" rx="4" fill="#64748B"/>
+    <rect x="124" y="348" width="54" height="8" rx="4" fill="#14B8A6"/>
+  </g>
+</svg>

@@ -9,6 +9,8 @@ DevInterviewCoach is a modern interview preparation product for full-stack devel
 - Tailwind CSS 4 styling
 - Premium SaaS-inspired responsive landing page
 - Polished sticky navigation, gradient hero, and elevated content cards
+- Local SVG illustrations for interview desks, mock interviews, coding coffee, question cards, developer profiles, and remote workspace scenes
+- Product-style visual sections for interview rehearsal and answer transformation
 - Topic cards for six full-stack technologies
 - Interactive question bank with 18 interview questions
 - Client-side search and topic/difficulty filters using React state
@@ -66,7 +68,10 @@ components/
   ButtonLink.tsx
   Footer.tsx
   HeroVisual.tsx
+  HeroMockup.tsx
+  ImageCard.tsx
   InterviewerPanel.tsx
+  LifestyleCard.tsx
   Navigation.tsx
   PracticeArena.tsx
   PracticeCard.tsx
@@ -77,12 +82,19 @@ components/
   SectionHeader.tsx
   SeniorProfile.tsx
   TopicCard.tsx
+  VisualFeatureSection.tsx
 lib/
   content.ts
   questions.ts
 public/
   images/
+    coding-coffee.svg
+    developer-profile.svg
     interview-coach-dashboard.png
+    interview-desk.svg
+    mock-interview.svg
+    question-cards.svg
+    remote-workspace.svg
 ```
 
 ## Future Improvements
